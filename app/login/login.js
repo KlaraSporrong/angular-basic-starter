@@ -3,30 +3,18 @@
 angular.module('myApp.login', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  // $routeProvider.when('/login', {
-  //   templateUrl: 'login/login.html',
-  //   controller: 'LoginCtrl'
-  // });
+
 }])
 
 .controller('LoginCtrl', ['$rootScope', function($rootScope){
-	// initFB($rootScope);
-  // This is called with the results from from FB.getLoginStatus().
-    console.log('LoginCtrl');
+
+    // Check if the Facebook API is already initialized
     if (window.fbAsyncInit) {
       console.log('Already Initialized FB', window.FB);
       checkLoginState();
     } else {
       initFB();
     }
-    
-    // if($rootScope.FB) {
-    //   console.log('Already initialized');
-    //   checkLoginState();
-    // } else {
-    //   console.log('Not initialized');
-    //   initFB();
-    // }
 
     function statusChangeCallback(response) {
       console.log('statusChangeCallback: ',response);
