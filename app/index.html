@@ -25,18 +25,11 @@
 <body ng-controller="MainCtrl">
 
   <header class="menu main-menu">
-    <h2>Facebook tutorial</h2>
+    <h2>Angular Basic Starter</h2>
     <ul>
       <li><a href="#/home">Home</a></li>
       <li><a href="#/events">Events</a></li>
-    </ul>
-
-    <div class="login-block" ng-cloak>
-      <div id="status">{{$rootScope.user}}</div>
-      <button id="loginBtn" class="login" ng-click="loginFB()">Log In</button>
-      <button id="logoutBtn" class="login" ng-click="logoutFB()">Log Out</button>
-    </div>
-    
+    </ul>    
   </header>
 
   <div class="content main-content" ng-view></div>
