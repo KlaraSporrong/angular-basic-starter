@@ -10,9 +10,7 @@ angular.module('myApp.events', ['ngRoute'])
 }])
 
 .controller('EventsCtrl', ['$rootScope','$scope' , function($rootScope, $scope){
-	// console.log($rootScope.FB);
-	// console.log($rootScope.user);
-	// self.FB = $rootScope.FB;
+
 	$scope.backgrounds = [
 		'#4CAF50',
 		'#FFC107',
