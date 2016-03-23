@@ -50,7 +50,7 @@ button.login {
   background-color: white;
   border: none;
   border-radius: 4px;
-  box-shadow: rgba(23, 23, 23, 0.66) 1px 2px 5px 0px;
+  box-shadow: rgba(23, 23, 23, 0.2) 1px 1px 3px 1px;
 }
 button.login:hover {
   background-color: #3485D6;
@@ -103,7 +103,7 @@ button#logoutBtn {
   line-height: 60px;
   list-style: none; 
   position: fixed;
-  box-shadow: rgba(23, 23, 23, 0.66) 0px 1px 5px 0px;
+  box-shadow: rgba(23, 23, 23, 0.2) 1px 1px 3px 1px;
 }
 .menu ul {
   margin: 0;
@@ -146,7 +146,7 @@ button#logoutBtn {
   border-radius: 10px;
   margin: 40px auto 100px;
   text-align: left;
-  box-shadow: rgba(23, 23, 23, 0.66) 1px 2px 5px 0px;
+  box-shadow: rgba(23, 23, 23, 0.2) 1px 1px 3px 1px;
 }
 .event-block-header {
   background-color: #106CC8;
@@ -165,7 +165,7 @@ button#logoutBtn {
     background-color: #fff;
     border-radius: 10px;
     margin: 40px 20px;
-    box-shadow: rgba(23, 23, 23, 0.66) 1px 2px 5px 0px;
+    box-shadow: rgba(23, 23, 23, 0.2) 1px 1px 3px 1px;
     display: inline-block;
     vertical-align: top;
   }
