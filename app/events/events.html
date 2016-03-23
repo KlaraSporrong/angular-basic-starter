@@ -1,1 +1,18 @@
-This is the event page
+<div class="menu sub-menu">
+  <ul>
+    <li ng-repeat="host in hosts | orderBy: 'name'"><a href="" ng-click="gotoAnchor(host.id)">{{host.name}}</a></li>
+  </ul>
+</div>
+<div class="content host-content" style="padding-left:60px; padding-right:60px; "ng-repeat="host in hosts | orderBy: 'name' track by $index">
+  <h1 id="{{host.id}}" style="background-color: {{ backgrounds[$index] }}">{{host.name}}</h1>
+  <div class="block-wrapper">
+    <div class="event-block" ng-repeat="event in host.events">
+      <div class="event-block-header" style="background-color: {{ backgrounds[$parent.$index] }}">{{event.start_time | date:shortDate}}</div>
+      <div class="event-block-body">
+        <a href="http://www.facebook.com/events/{{event.id}}" target="_blank"><h3>{{event.name}}</h3>
+        <img class="cover-img" src="{{event.cover.source}}"></a>
+        <p>{{event.description}}</p>
+      </div>
+    </div>	
+  </div>	
+</div>

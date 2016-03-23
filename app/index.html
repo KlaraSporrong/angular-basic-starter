@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Angular Basic Starter</title>
+  <title>Event Collector</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
@@ -25,11 +25,16 @@
 <body ng-controller="MainCtrl">
 
   <header class="menu main-menu">
-    <h2>Angular Basic Starter</h2>
+    <h2>Event Collector</h2>
     <ul>
       <li><a href="#/home">Home</a></li>
       <li><a href="#/events">Events</a></li>
-    </ul>    
+    </ul>
+    <div class="login-block" ng-cloak>
+      <div id="status">{{$rootScope.user}}</div>
+      <button id="loginBtn" class="login" ng-click="loginFB()">Log In</button>
+      <button id="logoutBtn" class="login" ng-click="logoutFB()">Log Out</button>
+    </div>    
   </header>
 
   <div class="content main-content" ng-view></div>
