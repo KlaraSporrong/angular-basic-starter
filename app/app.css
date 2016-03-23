@@ -1,19 +1,19 @@
 /* app css stylesheet */
 
 @font-face {
-    font-family: Raleway;
-    src: url(fonts/Raleway/Raleway-Medium.ttf);
-    font-weight: normal;
+  font-family: Raleway;
+  src: url(fonts/Raleway/Raleway-Medium.ttf);
+  font-weight: normal;
 }
 @font-face {
-    font-family: Raleway;
-    src: url(fonts/Raleway/Raleway-Bold.ttf);
-    font-weight: bold;
+  font-family: Raleway;
+  src: url(fonts/Raleway/Raleway-Bold.ttf);
+  font-weight: bold;
 }
 @font-face {
-    font-family: Raleway;
-    src: url(fonts/Raleway/Raleway-Light.ttf);
-    font-weight: lighter;
+  font-family: Raleway;
+  src: url(fonts/Raleway/Raleway-Light.ttf);
+  font-weight: lighter;
 }
 
 body {
@@ -30,13 +30,13 @@ a:hover {
   opacity: 0.8;
   text-decoration: underline;
 }
-
 h1 {
   background-color: #106CC8;
   color: #FFF;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   padding: 20px;
-  box-shadow: rgba(23, 23, 23, 0.66) 1px 2px 5px 0px;
+  margin-bottom: -84px;
 }
 h3 {
   font-size: 1em;
@@ -82,10 +82,10 @@ button#logoutBtn {
     margin: 0 30px 0 10px;
 }
 .login-block .fb_iframe_widget span {
-    display: inline-block;
-    position: relative;
-    text-align: justify;
-    vertical-align: text-bottom !important;
+  display: inline-block;
+  position: relative;
+  text-align: justify;
+  vertical-align: text-bottom !important;
 }
 .event-block p {
   white-space: pre-wrap;
@@ -132,11 +132,13 @@ button#logoutBtn {
 }
 .cover-img {
   width: 100%;
-  // max-width: 720px;
 }
 .block-wrapper {
   display: block;
   text-align: center;
+  box-shadow: rgba(23, 23, 23, 0.66) 1px 2px 5px 0px;
+  border-radius: 10px;
+  padding-top: 84px;
 }
 .event-block {
   max-width: 720px;
